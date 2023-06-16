@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <style>
+      /* CSS styles for the page */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      input[type="text"] {
+        width: 100px;
+      }
+      input[type="submit"] {
+        margin-left: 110px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <form>
+      <label for="celsius">Celsius:</label>
+      <input type="text" id="celsius" name="celsius"><br>
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input type="text" id="fahrenheit" name="fahrenheit"><br>
+      <input type="submit" value="Convert">
+    </form>
+    <div class="result" id="result"></div>
+    <script src="Temperature.js"></script>
+  </body>
+</html>
